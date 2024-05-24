@@ -1,0 +1,38 @@
+.container {
+  height: 90vh; 
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  width: 80vw;
+
+}
+
+.loginContainer{
+  width: 60vw;
+}
+
+
+.imageContainer {
+  
+  width: 40vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imageContainer {
+  height: 90vh;
+  width: 40vw;
+
+}
+
+.imageContainer img {
+  height: 90vh;
+  width: 40vw;
+  object-fit: cover;
+  object-position:top;
+}
+
+.container h1 {
+  margin-top: 0;
+}

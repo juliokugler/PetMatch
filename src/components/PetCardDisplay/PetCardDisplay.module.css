@@ -1,0 +1,77 @@
+.container {
+    display: flex;
+    width: 58vw;
+    margin:0 auto;
+    margin-top: 2vh;
+    max-height: 100vh;
+    flex-wrap: wrap;
+  }
+  
+ .container ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .title{
+    color: #575757;
+    margin-left: 1vw;
+  }
+  
+  .card {
+    background-color: #f0f0f0;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 0 20px;
+    width: 180px;
+    height: 180px;
+    background-size: cover;
+    background-position: center;
+    display: flex; /* Use flexbox */
+  flex-direction: column; /* Stack children vertically */
+  justify-content: flex-end; /* Align content to the bottom */
+  }
+
+  .cardContent {
+    margin-left: 20px;
+    margin-bottom: 3vh;
+  }
+  
+  .cardContent h2 {
+    margin-bottom: 10px;
+    margin-top: 1vh;
+  }
+  
+  .cardContent p {
+    margin: 2px 0;
+  }
+  
+  .card p:first-child {
+    font-weight: bold;
+  }
+
+  .pagination{
+    display: flex;
+    margin:0 auto;
+    justify-content: space-between;
+    width: 70vw;
+  }
+
+  .pageBox{
+    display: flex;
+    padding: 10px;
+    background-color: #f8f8f8;
+    justify-content: center;
+    align-items: center;
+    margin:0 1vw;
+    cursor: pointer;
+  }
+
+  .pagination svg {
+    fill: #575757;
+    margin:0
+  }

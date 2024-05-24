@@ -1,0 +1,20 @@
+.outerContainer {
+  height: 100vh; 
+  padding-top: 2vh;/* Set the height to 100% of the viewport height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.background {
+  background-image: url("../../Assets/Images/bg.png");
+  background-size: cover; /* Ensures the background image covers the entire container */
+  background-position: center; /* Centers the background image within the container */
+  border-radius: 10px; /* Set the border radius to round the corners */
+  overflow: hidden; /* Hide any overflowing content */
+}
+
+.innerContainer {
+  height: 88vh;
+}
+

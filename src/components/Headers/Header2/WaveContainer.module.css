@@ -1,0 +1,33 @@
+
+  /* Define keyframes for the wave animation */
+  @keyframes moveWave {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+  
+  /* Apply the animation to the wave container */
+  .waveContainer {
+    width: 100vw;
+    height: 8vh;
+    overflow: hidden; /* Hide any overflow */
+    position: relative; /* Position relative for inner wave */
+    display: flex;
+    align-items: center;
+    z-index: inherit;
+  }
+  
+  /* Apply the animation to each wave */
+  .wave {
+    width: 200%; /* Ensures two waves fit in the container */
+    height: 7.7vh;
+    background-image: url('./waveBottom.png');
+    background-repeat: repeat-x;
+ 
+    top: 0;
+    left: 0;
+    animation: moveWave 80s linear infinite;
+  }

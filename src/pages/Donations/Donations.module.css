@@ -1,0 +1,32 @@
+.mainContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .container {
+    background-color: #D5EDF9;
+    width: 100vw;
+    margin: 0 auto;
+    margin-bottom: 8vh;
+    padding-top: 6vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .pawsRightImage {
+    position: absolute;
+    right: 5%;
+    top: 15%;
+    height: 15vh;
+    opacity: 0.5;
+  }
+
+  .pawsLeftImage {
+    position: absolute;
+    left: 5%;
+    top: 15%;
+    height: 15vh;
+    opacity: 0.5;
+  }

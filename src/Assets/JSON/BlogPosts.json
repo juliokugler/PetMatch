@@ -1,0 +1,80 @@
+[
+    {
+      "image": "blogPost1.png",
+      "date": "8 de maio de 2024",
+      "title": "Treinamento para cachorro: como educar seu cão!",
+      "description": "Basta você deixar o pet sozinho um minuto para o caos se instalar em sua casa? O peludo estranha crianças ou outros animais? Você fala 'não pula'...",
+      "tags": ["Cães", "Comportamento"]
+    },
+    {
+      "image": "blogPost2.png",
+      "date": "7 de maio de 2024",
+      "title": "Conheça algumas plantas tóxicas para gatos",
+      "description": "Apesar de carnívoros, os felinos gostam de comer algumas plantinhas porque elas ajudam a eliminar os pelos ingeridos durante a higienização. Porém...",
+      "tags": ["Gatos", "Curiosidades"]
+    },
+    {
+      "image": "blogPost7.png",
+      "date": "6 de maio de 2024",
+      "title": "Por que o cachorro abana o rabo? Saiba mais!",
+      "description": "Nossos leais companheiros caninos são animais fascinantes que possuem a capacidade de expressar uma grande variedade de sentimentos...",
+      "tags": ["Cães", "Comportamento"]
+    },
+    {
+      "image": "blogPost9.png",
+      "date": "5 de maio de 2024",
+      "title": "Gato com prisão de ventre: como ajudar o bichano",
+      "description": "Segundo os especialistas, um gato com prisão de ventre é algo mais comum do que os tutores podem imaginar e causa muito desconforto e dor...",
+      "tags": ["Gatos", "Saúde"]
+    },
+    {
+      "image": "blogPost8.png",
+      "date": "4 de maio de 2024",
+      "title": "Alimentação saudável para Cães: dicas e cuidados",
+      "description": "A alimentação é um dos pilares fundamentais para a saúde dos nossos amigos caninos. Saber escolher os alimentos corretos e como oferecê-los...",
+      "tags": ["Cães", "Saúde"]
+    },
+    {
+      "image": "blogPost10.png",
+      "date": "3 de maio de 2024",
+      "title": "Curiosidades sobre o comportamento dos gatos",
+      "description": "Os gatos são animais misteriosos e cheios de curiosidades. Descubra mais sobre os hábitos e comportamentos desses felinos fascinantes...",
+      "tags": ["Gatos", "Curiosidades"]
+    },
+    {
+      "image": "blogPost3.png",
+      "date": "2 de maio de 2024",
+      "title": "Como preparar sua casa para a chegada de um pet",
+      "description": "Adotar um pet é um momento de muita alegria, mas também requer preparação. Saiba como deixar sua casa segura e acolhedora para o novo membro...",
+      "tags": ["Pets", "Preparação"]
+    },
+    {
+      "image": "blogPost11.png",
+      "date": "1 de maio de 2024",
+      "title": "A importância da vacinação em gatos",
+      "description": "A vacinação é essencial para manter os gatos saudáveis e protegidos contra diversas doenças. Conheça as principais vacinas e a época certa para aplicá-las...",
+      "tags": ["Gatos", "Saúde"]
+    },
+    {
+      "image": "blogPost12.png",
+      "date": "30 de abril de 2024",
+      "title": "Brincadeiras e exercícios para Cães",
+      "description": "Os Cães precisam de atividades físicas e mentais para se manterem saudáveis e felizes. Descubra algumas brincadeiras e exercícios que você pode fazer...",
+      "tags": ["Cães", "Atividade"]
+    },
+    {
+        "image": "blogPost5.png",
+        "date": "1 de maio de 2024",
+        "title": "Alimentação saudável para Gatos: dicas essenciais",
+        "description": "A alimentação adequada é crucial para a saúde e bem-estar dos Gatos. Descubra quais alimentos são indicados e como oferecer uma dieta balanceada para seu pet...",
+        "tags": ["Gatos", "Alimentação"]
+      },
+      {
+        "image": "blogPost6.png",
+        "date": "30 de abril de 2024",
+        "title": "A importância da socialização para gatos",
+        "description": "Muitos acreditam que gatos são animais solitários, mas a socialização é fundamental para o seu bem-estar. Aprenda como socializar seu gato de forma eficaz...",
+        "tags": ["Gatos", "Socialização"]
+      }
+    
+  ]

@@ -1,0 +1,92 @@
+
+
+.container {
+    height: 70vh;
+    background-color: var(--color-secondary);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.container h1 span {
+  font-style: italic;
+  color:  var(--color-primary-dark);
+}
+
+.waveBorder {
+    width: 100vw;
+    height: 8vh;
+}
+
+.innerContainer {
+    display: flex;
+    width: 60vw;
+margin: 0 auto;
+justify-content: space-between;
+align-items: center;
+}
+
+.innerContainer h1 {
+    font-size: 4.5vh;
+    font-weight: 500;
+}
+
+.button {
+    padding: 1vh 2vh;
+    border: none;
+    border-radius: 2vh;
+    background-color:  var(--color-primary-medium);
+    cursor: pointer;
+    margin-top: 3vh;
+    font-size: 1.8vh;
+  }
+
+  .textContainer {
+    width: 24vw;
+    padding-bottom: 6vh;
+    font-size: 1.8vh;
+  }
+
+  .button p {
+    margin: 0;
+    margin-bottom: 0.3vh;
+    align-items: baseline;
+  }
+
+  .button svg {
+    margin-left: 0.5vw;
+    padding: 0;
+  }
+
+   /* Define keyframes for the wave animation */
+   @keyframes moveWave {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+  
+  /* Apply the animation to the wave container */
+  .waveContainer {
+    width: 100%;
+    height: 6vh;
+    overflow: hidden; /* Hide any overflow */
+    position: absolute; /* Absolute positioning within the container */
+    bottom: 0; /* Position at the bottom of the container */
+    left: 0; /* Ensure it starts from the left */
+  }
+  
+  /* Apply the animation to each wave */
+  .wave {
+    width: 200%; /* Ensures two waves fit in the container */
+    height: 100%;
+    background-image: url('./waveBottom.png');
+    background-size: contain; /* Ensure the image covers the element */
+    background-repeat: repeat-x;
+    position: absolute; /* Position absolute for animation */
+    top: 0;
+    left: 0;
+    animation: moveWave 70s linear infinite;
+  }

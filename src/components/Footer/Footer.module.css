@@ -1,0 +1,126 @@
+.footer {
+    width: 100vw;
+    background-color: #FFFFFF;
+    padding: 2vh 0;
+    padding-top: 8vh;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .content {
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .newsletterRow {
+    display: flex;
+    justify-content: space-between;
+  
+    margin-bottom: 8vh;
+    width: 70vw;
+    
+  }
+  
+  .newsletterText h2 {
+    margin: 0;
+    font-size: 2.6vh;
+    font-weight: 600;
+  }
+  
+  .newsletterText p {
+    margin: 0.5vh 0 0 0;
+    font-size: 2vh;
+  }
+  
+  .newsletterForm {
+    display: flex;
+    align-items: center;
+    
+  }
+  
+  .input {
+    padding: 1vh;
+    border-radius: 2vh;
+    border: 0.1vh solid #ddd;
+    margin-right: 2vh;
+    flex: 1;
+    width: 20vw;
+  }
+  
+  .button {
+    padding: 1vh 2vh;
+    border: none;
+    border-radius: 2vh;
+    background-color: #FFCA96;
+    cursor: pointer;
+  }
+  
+  .infoRow {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2vh;
+    
+  }
+  
+  .logoSection {
+    flex: 1;
+  }
+  
+  .logo {
+    width: 8vw;
+    margin-bottom: 1vh;
+  }
+  
+  .linksSection {
+    display: flex;
+    flex: 3;
+    justify-content: space-between;
+    margin-left: 6vw;
+  }
+  
+  .linksGroup h3 {
+    margin: 0 0 1vh 0;
+  }
+  
+  .linksGroup a {
+    display: block;
+    color: #343330;
+    text-decoration: none;
+    margin-bottom: 0.5vh;
+  }
+  
+  .linksGroup a:hover {
+    text-decoration: underline;
+  }
+  
+  .divider {
+    border: none;
+    border-bottom: 0.1vh solid #ddd;
+    margin: 2vh 0;
+  }
+  
+  .bottomRow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .trademark {
+    font-size: 1.4vh;
+  }
+  
+  .socialIcons {
+    display: flex;
+    gap: 1vh;
+  }
+  
+  .icon {
+    font-size: 2vh;
+    color: #555;
+    cursor: pointer;
+  }
+  
+  .icon:hover {
+    color: #343330;
+  }

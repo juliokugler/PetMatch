@@ -1,0 +1,131 @@
+.container {
+    width: 70vw;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    border-radius: 20px;
+    margin-bottom: 6vh;
+    width: 20vw;
+    margin-right: 2vw;
+    color: #343330;
+  }
+  
+  .buttonRow {
+    width: 18vw;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    height: 8vh;
+    align-items: center;
+    border-bottom: 1px solid #E8E8E8;
+  }
+  
+  .container form {
+    display: flex;
+    flex-direction: column;
+    width: 10vw;
+    align-items: center;
+    margin: 0 auto;
+  }
+  
+  .searchLabel {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 18vw;
+    margin-bottom: 2vh;
+  }
+  
+  .searchLabel input {
+    border: none;
+    height: 5vh;
+    border-radius: 6px;
+    width: 18vw;
+    border: 1px solid #E8E8E8;
+  }
+  
+  .searchLabel input::placeholder {
+    padding-left: 2vw;
+  }
+  
+  .searchLabel select {
+    border: none;
+    height: 3vh;
+    border-radius: 6px;
+    width: 12vw;
+  }
+  
+  .searchButton {
+    height: 5vh;
+    width: 8vw;
+    border: none;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    background-color: #FFCA96;
+    margin-top: 3.4vh;
+    cursor: pointer;
+    justify-content: center;
+  }
+  
+  .searchButton p {
+    font-size: 1.8vh;
+    font-weight: 500;
+  }
+  
+  .filterContainer {
+    width: 18vw;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2vh;
+    border-bottom: 1px solid #E8E8E8;
+    padding-bottom: 2vh;
+  }
+  
+  .filterContainer label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1vh;
+  }
+  
+  .radioContainer {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .hiddenRadio {
+    display: none;
+  }
+  
+  .customRadio {
+    width: 16px;
+    height: 16px; 
+    border-radius: 50%;
+    border: 2px solid  var(--color-primary-dark);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    position: relative;
+    cursor:pointer;
+    top: 0;
+  }
+  
+  .customRadio::after {
+    content: "";
+    width: 8px; 
+    height: 8px; 
+    border-radius: 50%;
+    background-color:  var(--color-primary-dark);
+    position: absolute;
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    opacity: 0;
+    transition: opacity 0.2s;
+  }
+  
+  .hiddenRadio:checked + .customRadio::after {
+    opacity: 1;
+  }

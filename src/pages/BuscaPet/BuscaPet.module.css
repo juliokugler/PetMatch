@@ -1,0 +1,16 @@
+
+.container{
+    display: flex;
+    width: 80vw;
+    margin: 0 auto;
+   height: 145vh;
+}
+
+.mainContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    height: 30vh;
+}

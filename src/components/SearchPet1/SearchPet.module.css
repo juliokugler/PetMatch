@@ -1,0 +1,66 @@
+.container {
+    display: flex;
+color: white;
+height: 6vw;
+margin: 2vh auto 0 auto;
+color: #575757;
+width: 70vw;
+display: flex;
+border-radius: 20px;
+}
+
+.container form {
+    display: flex;
+    width: 70vw;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-between;
+    }
+
+.searchLabel {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.searchLabel input {
+    border: none;
+    height: 2.8vh;
+    border-radius: 6px;
+    width: 15vw;
+}
+
+
+
+.searchLabel select {
+    border: none;
+    height: 3vh;
+    border-radius: 6px;
+    width: 12vw;
+}
+
+.searchButton {
+    height: 3vh;
+    border: none;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    color: white;
+    background-color: #FF7676;
+    margin-top: 3.4vh;
+    padding: 1vh 1.5vw 0 1.5vw;
+    cursor: pointer;
+}
+
+.searchButton svg {
+    margin-left: 0.8vw; 
+      margin-bottom: 1vh;
+      fill: white;
+}
+
+.container p {
+    margin-top: 0;
+    font-size: 1.6vh;
+    margin-bottom: 1vh;
+    margin-left: 0.2vw;
+}

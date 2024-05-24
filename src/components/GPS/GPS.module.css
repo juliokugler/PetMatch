@@ -1,0 +1,66 @@
+.container {
+  position: relative;
+  opacity: 0; /* Initially hide the component */
+  transition: opacity 0.5s ease; /* Transition for opacity */
+}
+
+.container.loaded {
+  opacity: 1; /* Show the component with animation when loaded */
+}
+
+.search {
+  position: absolute;
+  top: 9%;
+  left: 51%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.search p {
+  position: absolute;
+  top: 48vh;
+  left: 48%;
+  color: #FFFFFF;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.search label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.search input {
+  width: 14vw;
+  border: none;
+  border-radius: 100px;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.search input::placeholder {
+  color: #000000;
+}
+
+.container img {
+  display: block;
+  height: 100vh;
+  
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(100%); /* Start position: outside the viewport */
+    opacity: 0; /* Initially hidden */
+  }
+  to {
+    transform: translateX(0); /* End position: at the left edge */
+    opacity: 1; /* Fully visible */
+  }
+}
+
+/* Add this class when the animation is complete */
+.container.loaded {
+  opacity: 1;
+}

@@ -1,0 +1,170 @@
+.container {
+    display: flex;
+    width: 70vw;
+    margin:0 auto;
+    margin-top: 2vh;
+    flex-wrap: wrap;
+  }
+  
+ .container ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .title{
+    color: #575757;
+    margin-left: 1vw;
+  }
+  
+  .card {
+    background-color: #f0f0f0;
+    cursor: pointer;
+    border-radius: 10px;
+    padding: 0.5vw;
+    margin: 20px;
+    width: 12vw;
+    height: 26vh;
+    background-size: cover;
+    background-position: center;
+    display: flex; 
+  flex-direction: column; 
+  justify-content: flex-end; 
+  }
+
+  .iconContainer{
+    background-color: rgba(255, 255, 255, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1.8vw;
+    height: 1.8vw;
+    border-radius: 100%;
+  }
+
+  .iconContainer svg {
+    font-size: 1vw;
+    fill: #FF7676;
+  }
+  
+  .card h2 {
+    color: white;
+    margin-bottom: 10px;
+  }
+  
+  .card p {
+    color: white;
+    margin: 5px 0;
+  }
+  
+  .card p:first-child {
+    font-weight: bold;
+  }
+
+  .pagination{
+    display: flex;
+    margin:0 auto;
+    justify-content: space-between;
+    width: 70vw;
+  }
+
+  .pageBox{
+    display: flex;
+    padding: 10px;
+    background-color: #f8f8f8;
+    justify-content: center;
+    align-items: center;
+    margin:0 1vw;
+    cursor: pointer;
+  }
+
+  .pagination svg {
+    fill: #575757;
+    margin:0
+  }
+
+  .outerCard {
+    width: 32.5vw;
+    border-radius: 20px;
+    background-color: white;
+    margin-bottom: 5vh;
+    display: flex;
+  }
+
+  .CTA {
+    display: flex;
+    color: white;
+    background-color: #ff9393;
+    height: 3.6vh;
+    border: none;
+    display: flex;
+border-radius: 100px;
+transition:0.3s ease;
+cursor: pointer;
+font-weight: 600;
+font-size: 1.5vh;
+padding: 0 1vw;
+align-items: center;
+justify-content: center;
+margin-top: 2.6vh;
+}
+
+
+
+.healthCard {
+  list-style: none;
+  border: 1px solid #c2c2c2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 6px 12px;
+  border-radius: 100px;
+  margin-right: 1vw;
+  height: 2vh;
+}
+
+.healthContainer {
+  display: flex;
+  margin-top: 2vh;
+  
+}
+
+
+.CTA svg {
+  fill: white;
+  margin-right: 8px;
+}
+
+.adoption{
+  margin-top: 2.8vh;
+  align-items: center;
+  display: flex;
+  justify-content: left;
+}
+
+.adoption p {
+  width: 15vw;
+  margin-top: 0;
+}
+
+.adoption span {
+  color: #ffa6a6;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.adoption img {
+  height: 3vh;
+  width: 3.5vh;
+  margin-bottom: 1.9vh;
+  margin-right: 0.5vw;
+}
+
+.infoAndCTA {
+  display: flex;
+  justify-content: space-between;
+  width: 15.5vw;
+  margin: 0 auto
+}
