@@ -34,18 +34,28 @@
     text-align: left;
     width: 18vw;
     margin-bottom: 2vh;
+    position: relative;
   }
   
   .searchLabel input {
     border: none;
     height: 5vh;
     border-radius: 6px;
-    width: 18vw;
+    width: 15.8vw;
     border: 1px solid #E8E8E8;
+    padding-left: 2.2vw;
+  }
+
+  .searchIcon{
+    position: absolute;
+    height: 2.2vh;
+    bottom: 44.5%;
+    left: 3.5%;
   }
   
   .searchLabel input::placeholder {
-    padding-left: 2vw;
+  
+    font-size: 1.6vh;
   }
   
   .searchLabel select {
@@ -73,59 +83,14 @@
     font-weight: 500;
   }
   
-  .filterContainer {
-    width: 18vw;
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 2vh;
-    border-bottom: 1px solid #E8E8E8;
-    padding-bottom: 2vh;
+  .mapPin {
+    height: 2vh;
+    width: 1.1vw;
+    margin-right: 0.2vw;
+    padding-bottom: 0.5vh;
   }
   
-  .filterContainer label {
+  .useCurrentLocation {
     display: flex;
     align-items: center;
-    margin-bottom: 1vh;
-  }
-  
-  .radioContainer {
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-  }
-  
-  .hiddenRadio {
-    display: none;
-  }
-  
-  .customRadio {
-    width: 16px;
-    height: 16px; 
-    border-radius: 50%;
-    border: 2px solid  var(--color-primary-dark);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-right: 10px;
-    position: relative;
-    cursor:pointer;
-    top: 0;
-  }
-  
-  .customRadio::after {
-    content: "";
-    width: 8px; 
-    height: 8px; 
-    border-radius: 50%;
-    background-color:  var(--color-primary-dark);
-    position: absolute;
-    top: 50%; 
-    left: 50%;
-    transform: translate(-50%, -50%); 
-    opacity: 0;
-    transition: opacity 0.2s;
-  }
-  
-  .hiddenRadio:checked + .customRadio::after {
-    opacity: 1;
   }

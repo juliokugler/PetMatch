@@ -11,6 +11,8 @@
 .container{
     display: flex;
     flex-direction: column;
+    width: 100vw;
+    overflow: hidden;
 }
 
 .userFooter{
@@ -20,4 +22,9 @@
 
 svg {
     fill: #474747;
+}
+
+body{
+   width: 100vw;
+   overflow-x: hidden;
 }

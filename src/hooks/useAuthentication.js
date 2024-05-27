@@ -5,16 +5,13 @@ import {
   updateProfile,
   signOut,
 } from "firebase/auth";
-
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom"; // Import useNavigate hook
 
 export const useAuthentication = () => {
   const [error, setError] = useState(null);
   const [loading, setLoading] = useState(false);
-
   const navigate = useNavigate(); // Initialize useNavigate hook
-
   const auth = getAuth();
 
   // deal with memory leak
@@ -28,7 +25,6 @@ export const useAuthentication = () => {
 
   const createUser = async (data) => {
     checkIfIsCancelled();
-
     setLoading(true);
 
     try {
@@ -43,10 +39,9 @@ export const useAuthentication = () => {
         photoURL: data.photoURL,
       });
 
-      navigate("/dashboard"); // Redirect to additionalinfo after successful creation
+      navigate("/dashboard"); // Redirect to dashboard after successful creation
     } catch (error) {
       console.log(error.message);
-      console.log(typeof error.message);
 
       let systemErrorMessage;
 
@@ -66,23 +61,19 @@ export const useAuthentication = () => {
 
   const logout = () => {
     checkIfIsCancelled();
-
     signOut(auth);
   };
 
   const login = async (data) => {
     checkIfIsCancelled();
-
     setLoading(true);
     setError(false);
 
     try {
       await signInWithEmailAndPassword(auth, data.email, data.password);
-      navigate("/dashboard"); // Redirect to additionalinfo after successful login
+      navigate("/dashboard"); // Redirect to dashboard after successful login
     } catch (error) {
       console.log(error.message);
-      console.log(typeof error.message);
-      console.log(error.message.includes("user-not"));
 
       let systemErrorMessage;
 
@@ -94,12 +85,8 @@ export const useAuthentication = () => {
         systemErrorMessage = "Ocorreu um erro, por favor tenta mais tarde.";
       }
 
-      console.log(systemErrorMessage);
-
       setError(systemErrorMessage);
     }
-
-    console.log(error);
 
     setLoading(false);
   };

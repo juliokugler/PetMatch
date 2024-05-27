@@ -2,7 +2,9 @@
   position: relative;
   opacity: 0; /* Initially hide the component */
   transition: opacity 0.5s ease; /* Transition for opacity */
-}
+  border-radius: 2vh;
+  width: 20.7vw;
+  }
 
 .container.loaded {
   opacity: 1; /* Show the component with animation when loaded */
@@ -18,8 +20,8 @@
 
 .search p {
   position: absolute;
-  top: 48vh;
-  left: 48%;
+  top: 45.5vh;
+  left: 46%;
   color: #FFFFFF;
   transform: translate(-50%, -50%);
   z-index: 1;
@@ -36,16 +38,18 @@
   border-radius: 100px;
   padding: 10px;
   margin-bottom: 10px;
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(255, 255, 255, 0.8);
 }
 
 .search input::placeholder {
-  color: #000000;
+  color: var(--color-text);
+  font-size: 1.6vh;
 }
 
 .container img {
   display: block;
-  height: 100vh;
+  height: 92vh;
+  border-radius: 2vh;
   
 }
 

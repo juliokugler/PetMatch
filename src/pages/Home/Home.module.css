@@ -1,9 +1,13 @@
 
 .servicosContainer, .animaisProximosContainer, .infoContainer {
-    margin-bottom: 12vh;
+    margin-bottom: 10vh;
 }
 
 .heroContainer, .bannerAjudaContainer{
     margin-bottom: 6vh;
 }
 
+
+.heroContainer{
+    height: 80vh;
+}

@@ -6,7 +6,8 @@
 }
 
 .container h1 {
-  font-size: 300;
+  margin-bottom: 1vh;
+
 }
 
 .carouselContainer {
@@ -23,13 +24,14 @@
   }
   
   .card {
-    background: white;
+    background: var(--color-background);
    
     flex: 0 0 360px; /* Each card takes up 360px width */
     max-width: 360px;
     overflow: hidden;
     display: flex;
     flex-direction: column;
+    border-radius: 2vh;
   }
   
   .imagePlaceholder {
@@ -46,7 +48,9 @@
   }
   
   .content {
-    padding: 15px;
+    padding: 0;
+    padding-top: 2vh;
+   
   }
   
   .date {
@@ -57,11 +61,14 @@
   .title {
     font-size: 18px;
     margin: 10px 0;
+    height: 6vh;
   }
   
   .description {
     font-size: 14px;
     color: #555;
+    height: 10vh;
+  
   }
   
   .tags {
@@ -70,10 +77,11 @@
   
   .tag {
     display: inline-block;
-    background: #f0f0f0;
-    border-radius: 3px;
-    padding: 2px 5px;
-    font-size: 12px;
+    background-color: var(--color-gray-lightest);
+    border-radius: 100px;
+    padding: 5px 10px;
+    font-size: 1.4vh;
+    color:var(--color-black);
     margin-right: 5px;
   }
   
@@ -81,4 +89,36 @@
     content: "";
     width: 100px; /* Adjust based on your desired halfway width */
     flex: 0 0 auto;
+  }
+
+  .button {
+    padding: 1vh 2vh;
+    border: none;
+    border-radius: 2vh;
+    background-color: var(--color-primary-medium);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  .titleAndCTA {
+    display: flex;
+    width: 124vw;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3vh;
+  }
+
+  
+  .button svg {
+    margin:0;
+    margin-left: 0.5vw;
+    font-size: 1.5vh;
+    fill: var(--color-gray-dark);
+    padding:0
+  }
+
+  .button p {
+    margin:0
   }

@@ -8,6 +8,21 @@
     justify-content: space-between;
 }
 
+.card {
+  opacity: 0;
+  transform: scale(0.9);
+  transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
+}
+
+
+.card p {
+  text-align: center;
+  margin-top: 2vh;
+  font-size: 1.8vh;
+}
+
+
+
 .waveBorder {
     width: 100vw;
     height: 8vh;
@@ -37,3 +52,24 @@
     font-weight: 600;
     margin-bottom: 1vh;
 }
+
+
+@keyframes fadeInZoom {
+    0% {
+      opacity: 0;
+      transform: scale(0.9);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+    
+  .animate {
+    opacity: 1;
+    transform: scale(1);
+    animation: fadeInZoom 1s forwards;
+  }
+  
+

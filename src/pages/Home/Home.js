@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef, useEffect } from "react";
 import Hero from "../../components/Home/Hero/Hero";
 import AdoptionSteps from "../../components/AdoptionSteps/AdoptionSteps";
 import PetMatchInfo from "../../components/PetMatchInfo/PetMatchInfo";
@@ -7,14 +7,40 @@ import AnimaisProximos from "../../components/Home/AnimaisProximos/AnimaisProxim
 import Testimonials from "../../components/Home/Testimonials/Testimonials";
 import RecentBlogPosts from "../../components/Home/RecentBlogPosts/RecentBlogPosts";
 import BannerAjuda from "../../components/BannerAjuda/BannerAjuda";
+
 const Home = () => {
+  const adoptionStepsRef = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add(styles.visible);
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.5 }
+    );
+
+    if (adoptionStepsRef.current) {
+      observer.observe(adoptionStepsRef.current);
+    }
+
+    return () => {
+      if (adoptionStepsRef.current) {
+        observer.unobserve(adoptionStepsRef.current);
+      }
+    };
+  }, []);
+
   return (
     <div className={styles.container}>
       <div className={styles.heroContainer}>
         <Hero />
       </div>
-
-      <div className={styles.servicosContainer}>
+      <div className={styles.servicosContainer} ref={adoptionStepsRef}>
         <AdoptionSteps />
       </div>
       <div className={styles.infoContainer}>

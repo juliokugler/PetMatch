@@ -19,7 +19,9 @@ const Footer = () => {
               placeholder="Insira seu email"
               className={styles.input}
             />
-            <button className={styles.button}>Inscreva-se</button>
+            <button className={styles.button}>
+              <p>Inscreva-se</p>
+            </button>
           </div>
         </div>
 

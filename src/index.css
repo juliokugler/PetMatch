@@ -19,9 +19,23 @@ code {
   --color-primary-dark: #FF9E4F ;
   --color-primary-medium: #FFCA96;
   --color-primary-light: #FFF1DF;
-  --color-secondary: #D5EDF9;
+  --color-secondary-medium: #D5EDF9;
+  --color-secondary-dark:#709cb1;
   --color-background: #FFFFFF;
-  --color-border: #E8E8E8;
-  --color-text: #343330;
+  --color-border: #F4F4F4;
+  --color-gray-lightest: #F4F4F4;
+  --color-gray-light: #E8E8E8;
+  --color-gray-medium: #B7B7B7;
+  --color-gray-dark: #7A7A7A;  
+    --color-black: #343330;
   /* Add more colors as needed */
+}
+
+p {
+  font-size: 1.8vh;
+ 
+}
+
+h1 {
+  font-weight: 500;
 }

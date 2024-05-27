@@ -1,0 +1,115 @@
+.animalForm {
+  display: flex;
+  flex-direction: column;
+  width: 50vw;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 2vh;
+  background-color: var(--color-background);
+  border: 1px solid var(--color-gray-medium);
+}
+
+.formGroup {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.imagePreview {
+  width: 20vw;
+  overflow: hidden;
+  margin-right: 20px;
+}
+
+.imagePreview img {
+  width: 20vw;
+  height: 30vw;
+  object-fit: cover;
+}
+
+.placeholderIcon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2vh;
+  width: 20vw;
+  height: 30vw;
+  font-size: 3rem;
+  color: #ccc;
+  background: var(--color-gray-light);
+}
+
+.inputFields {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.inputGroup {
+  margin-bottom: 15px;
+}
+
+.label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.selectGroup {
+  margin-bottom: 15px;
+}
+
+.radioGroup {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.radioLabel {
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+.submitButton {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 100px;
+  background-color: var(--color-primary-medium);
+  color: var(--color-black);
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.hiddenRadio {
+  display: none;
+}
+
+.customRadio {
+  width: 16px;
+  height: 16px; 
+  border-radius: 50%;
+  border: 2px solid var(--color-primary-dark);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+  position: relative;
+  cursor: pointer;
+}
+
+.customRadio::after {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: var(--color-primary-dark);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+.hiddenRadio:checked + .customRadio::after {
+  opacity: 1;
+}

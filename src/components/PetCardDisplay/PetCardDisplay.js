@@ -10,7 +10,7 @@ const PetCardDisplay = () => {
   const navigate = useNavigate();
 
   const handleDogClick = (id) => {
-    navigate(`/busca-pet/${id}`); // Navigate to the specified route
+    navigate(`/busca-pet/${id}`);
   };
   return (
     <div className={styles.container}>
@@ -24,9 +24,10 @@ const PetCardDisplay = () => {
               {" "}
             </div>
             <div className={styles.cardContent}>
-              <h2>{dog.name}</h2>
-              <p>{dog.sexo}</p>
-              <p>{dog.local}</p>
+              <h3>{dog.name}</h3>
+              <p>
+                {dog.local} <span>•</span> {dog.sexo} {dog.idade}
+              </p>
             </div>
           </li>
         ))}

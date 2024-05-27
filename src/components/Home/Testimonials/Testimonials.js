@@ -2,28 +2,43 @@ import React from "react";
 import styles from "./Testimonials.module.css";
 import waveTop from "./waveTop.png";
 import waveBottom from "./waveBottom.png";
-import stars from "./Stars.png";
 import petOwner from "../../../Assets/Images/petOwner.png";
-
+import { FaArrowRight, FaArrowLeft, FaStar } from "react-icons/fa6";
 const Testimonials = () => {
   return (
     <div className={styles.container}>
       <img className={styles.waveBorder} src={waveTop}></img>
       <div className={styles.innerContainer}>
         <div className={styles.textContainer}>
-          <img src={stars}></img>
+          <div className={styles.starsContainer}>
+            <FaStar />
+            <FaStar />
+            <FaStar />
+            <FaStar />
+            <FaStar />
+          </div>
           <h3 className={styles.text}>
             "Adotar o Dom pela PetMatch foi uma decisão incrível! Nossa casa
             agora é sempre alegre e cheia de amor. Obrigado, PetMatch, por nos
             dar essa chance de transformar nossa família para sempre!"
           </h3>
-
-          <p>
-            <span>Marcelo Santos</span>
-          </p>
-          <p> Tutor do Dom</p>
+          <div className={styles.nameAndIcons}>
+            <div>
+              <p>
+                <span>Marcelo Santos</span>
+              </p>
+              <p> Tutor do Dom</p>
+            </div>{" "}
+            <div className={styles.pagination}>
+              <div className={styles.pageBox}>
+                <FaArrowLeft />
+              </div>
+              <div className={styles.pageBox}>
+                <FaArrowRight />
+              </div>
+            </div>
+          </div>
         </div>
-
         <div className={styles.imageContainer}>
           <img src={petOwner}></img>
         </div>

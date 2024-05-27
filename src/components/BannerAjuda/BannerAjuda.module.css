@@ -1,8 +1,8 @@
 
 
 .container {
-    height: 70vh;
-    background-color: var(--color-secondary);
+    height: 76vh;
+    background-color: var(--color-secondary-medium);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -18,9 +18,20 @@
     height: 8vh;
 }
 
+.imageContainer {
+  height: 60vh;
+  margin-right: -5vw;
+ 
+}
+
+.imageContainer img{
+  height: 60vh;
+  width: 34vw;
+  padding-top: 2vh;
+}
 .innerContainer {
     display: flex;
-    width: 60vw;
+    width: 55vw;
 margin: 0 auto;
 justify-content: space-between;
 align-items: center;

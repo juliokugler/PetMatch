@@ -10,6 +10,7 @@
     text-align: center;
     margin: 0;
     margin-bottom: 2vh;
+   
 }
 
 .container span {
@@ -22,4 +23,15 @@ color: var(--color-primary-dark);
 
 .messageBannerText{
     width: 80vw;
+}
+
+.dogImage, .catImage {
+    height: 16vh;
+    width: 16vh;
+    margin-top: 1.5vh;
+}
+
+.dogImage {
+    margin-left: 0.8vw;
+    margin-right: -0.8vw;
 }

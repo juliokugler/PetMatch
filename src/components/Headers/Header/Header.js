@@ -44,12 +44,20 @@ const Header = ({ sectionType }) => {
   return (
     <div className={styles.container}>
       <div className={styles.messageBanner}>
-        <img src={cat_line} alt="Gato traço em linha"></img>
+        <img
+          className={styles.catImage}
+          src={cat_line}
+          alt="Gato traço em linha"
+        ></img>
         <div className={styles.messageBannerText}>
           {subtextContent}
           {headerContent}
         </div>
-        <img src={dog_line} alt="Cachorro traço em linha"></img>
+        <img
+          className={styles.dogImage}
+          src={dog_line}
+          alt="Cachorro traço em linha"
+        ></img>
       </div>
     </div>
   );

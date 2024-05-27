@@ -21,7 +21,7 @@
   }
   
   .tags span {
-    background-color: #F4F4F4;
+    background-color: var(--color-gray-lightest);
     padding: 0 0.5vw;
     border-radius: 20px;
     cursor: pointer;
@@ -34,7 +34,7 @@
   .searchInput {
     padding: 10px 20px;
     border-radius: 20px;
-    border: 1px solid #B7B7B7;
+    border: 1px solid var(--color-gray-medium);
     padding-left: 40px;
   }
   
@@ -48,7 +48,7 @@
   
   .separator {
     width: 80vw;
-    border-bottom: 1px solid #B7B7B7;
+    border-bottom: 1px solid var(--color-gray-medium);
     margin-bottom: 4vh;
   }
   
@@ -64,8 +64,8 @@
   
   .featuredPost {
     width: 40vw;
-    background-color: white;
-   
+    background-color: var(--color-background);
+   cursor: pointer;
     border-radius: 8px;
     padding: 20px 0;
     
@@ -81,7 +81,7 @@
   
   .featuredPost .date {
     font-size: 0.9em;
-    color: #777;
+    color: var(--color-gray-dark);
     margin: 10px 0;
   }
   
@@ -100,12 +100,12 @@
     width: 35vw;
     display: flex;
     flex-direction: column;
-    
+    cursor: pointer;
   }
   
   .sidePost {
     display: flex;
-    background-color: white;
+    background-color: var(--color-background);
     
     border-radius: 8px;
     padding: 2vh 0;
@@ -125,7 +125,7 @@
   
   .postContent .date {
     font-size: 0.9em;
-    color: #777;
+    color: var(--color-gray-dark);
     margin-bottom: 5px;
     margin-top: 0
   }
@@ -137,7 +137,7 @@
   
   .postContent .description {
     font-size: 1em;
-    color: #555;
+    color: var(--color-black);
     margin-bottom: 10px;
   }
   
@@ -150,13 +150,69 @@
    margin: 2vh -1vw 5vh -1vw;
   }
   
+
+  .content .date {
+    font-size: 1.4vh;
+    color: var(--color-gray-dark);
+    margin-bottom: 5px;
+  }
+  
+  .content .title {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    height: 6vh;
+  }
+  
+ 
+  
+  .content .tags {
+    margin-top: 10px;
+  }
+  .tag {
+    display: inline-block;
+    background-color: var(--color-gray-lightest);
+    border-radius: 100px;
+    padding: 5px 10px;
+    font-size: 1.4vh;
+    color:var(--color-black);
+    margin-right: 5px;
+  }
+
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
   .card {
     width: calc(22% - 2vw);
-    background-color: white;
-   
+    background-color: var(--color-background);
+    cursor: pointer;
     border-radius: 8px;
     margin-bottom: 3vh;
     padding: 20px;
+    opacity: 0;
+    animation: fadeInUp 0.5s ease-in-out forwards;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+
+  .content .description {
+    font-size: 1em;
+    color: var(--color-black);
+    margin-bottom: 10px;
+    height: 12vh;
+    animation: fadeInUp 0.5s ease-in-out forwards;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
   }
   
   .imagePlaceholder img {
@@ -165,35 +221,9 @@
     border-radius: 1vh;
     height: 20vh;
     object-fit: cover;
+    transition: transform 0.3s;
   }
   
-  .content .date {
-    font-size: 0.9em;
-    color: #777;
-    margin-bottom: 5px;
-  }
-  
-  .content .title {
-    font-size: 1.2em;
-    margin-bottom: 10px;
-  }
-  
-  .content .description {
-    font-size: 1em;
-    color: #555;
-    margin-bottom: 10px;
-  }
-  
-  .content .tags {
-    margin-top: 10px;
-  }
-  
-  .tag {
-    display: inline-block;
-    background-color: #F4F4F4;
-    border-radius: 4px;
-    padding: 5px 10px;
-    font-size: 0.9em;
-    color: #555;
-    margin-right: 5px;
+  .card:hover .imagePlaceholder img {
+    transform: scale(1.05);
   }

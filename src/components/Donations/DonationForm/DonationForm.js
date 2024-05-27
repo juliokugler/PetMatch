@@ -21,7 +21,7 @@ const DonationForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Lógica de submissão aqui
+
     console.log(`Doação de R$${amount} para ${selectedOng}`);
   };
 

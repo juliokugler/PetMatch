@@ -4,52 +4,6 @@
     width: 70vw;
     margin: 0 auto;
     text-align: left;
-    color: #5F5F5F;
-}
+    color: var(--color-gray-dark);
 
-.cardContainer {
-    display: flex;
-    flex-direction: row;
-    width: 70vw;
-    flex-wrap: wrap;
-    margin: 0 auto;
-    justify-content: space-between;
-    margin-top: 7vh;
-    margin-bottom: 6vh;
-}
-
-.card {
-    width: 14vw;
-    min-height: 24vh;
-text-align: center;
-border-radius: 20px;
-background-color: var(--color-background);
-padding: 2vh;
-margin-bottom: 4vh;
-}
-
-.card img{
-    height: 6vh;
-}
-
-.card p {
-    text-align: center;
-    margin-top: 2vh;
-    font-size: 1.8vh;
-}
-
-.card h3 {
-    margin-top: 2vh;
-}
-
-.questions {
-    display: flex;
-    margin: 0 auto;
-
-}
-
-
-
-.container p u {
-    margin-left: 0.2vw;
 }

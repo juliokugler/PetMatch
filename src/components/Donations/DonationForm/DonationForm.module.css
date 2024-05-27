@@ -5,15 +5,18 @@
     justify-content: center;
     display: flex;
     height: 72vh;
-    padding-bottom: 5vh;
+    padding-bottom: 3vh;
     padding-top: 1vh;
    
 }
 .imageContainer {
     height: 65vh;
-    width: 30vw;
+    width: 35vw;
+    padding-top: 8vh;
+    padding-left: 3vw;
+    margin-right: -3vw;
     background-position: center;
-    background-size: 60vh 30vw;
+    background-size: 37vw 65vh;
     background-repeat: no-repeat;
     background-image: url('../../../Assets/Images/Contents.png');
 }
@@ -120,7 +123,7 @@ cursor: pointer;
   height: 6vh;
   overflow: hidden; /* Hide any overflow */
   position: absolute; /* Absolute positioning within the container */
-  bottom: 4%; /* Position at the bottom of the container */
+  bottom: 8%; /* Position at the bottom of the container */
   left: 0; /* Ensure it starts from the left */
 }
 

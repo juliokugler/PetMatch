@@ -1,0 +1,200 @@
+.container {
+    display: flex;
+    color: var(--color-black);
+  }
+  
+  .petDetailsContainer {
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    margin: 0 auto;
+   
+    max-height: 100vh;
+  }
+
+
+  
+  .backOption {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin: 1vh 0;
+  }
+  
+  .backOption svg {
+    fill: var(--color-black);
+    margin-right: 0.5vw;
+  }
+  
+  .petCard {
+    display: flex;
+    height: 34vh;
+  }
+  
+  .petImage {
+    width: 24vw;
+    height: 34vh;
+    border-radius: 16px;
+    object-fit: cover;
+  }
+  
+  .petInfoContainer {
+    display: flex;
+    flex-direction: column;
+    margin-left: 2vw;
+  }
+  
+  .nameAndInfo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .nameAndInfo h2 {
+    margin: 0;
+    margin-right: 1vw;
+  }
+  
+  .petId {
+    color: var(--color-gray-dark);
+  }
+  
+  .cardRow {
+    display: flex;
+    margin-top: 1vh;
+  }
+  
+  .infoCard {
+    margin-right: 2vw;
+  }
+
+  .ongAndIcon{
+    display: flex;
+    align-items: center;
+padding:0;
+  }
+
+  .ongAndIcon p {
+    margin: 0;
+  }
+  
+  .tagContainer {
+    display: flex;
+    margin-top: 1.5vh;
+    flex-wrap: wrap;
+  }
+  
+  .tag {
+    list-style: none;
+    border: 1px solid var(--color-gray-medium);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 6px 12px;
+    border-radius: 100px;
+    margin-right: 1vw;
+  }
+  
+  .aboutSection {
+    max-width: 50vw;
+    margin-top: 2vh;
+  }
+
+  .aboutSection h2 {
+    margin: 2vh 0;
+  }
+  
+  .buttonsContainer {
+    display: flex;
+    margin: 2vh 0;
+  }
+
+  .buttonsContainer p {
+    margin: 0;
+  }
+  
+  .adoptButton {
+    background-color: var(--color-primary-medium);
+   
+    border: none;
+    padding: 10px 20px;
+    border-radius:100px;
+    margin-right: 1vw;
+    cursor: pointer;
+  }
+  
+  .favoriteButton {
+    background-color: var(--color-black);
+    color: var(--color-background);
+    border: none;
+    padding: 10px 20px;
+    border-radius:100px;
+    margin-right: 1vw;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+  }
+
+  .favoriteButton svg {
+    margin: 0;
+    font-size: 1.6vh;
+    margin-left: 0.5vw;
+    fill: var(--color-background);
+    stroke: 1px solid var(--color-background);
+  }
+  
+  .shareButton {
+    background-color: var(--color-background);
+    color: var(--color-text);
+    border: 1px solid var(--color-gray-light);
+    padding: 10px 20px;
+    border-radius:100px;
+    cursor: pointer;
+  }
+  
+  .ongInfoContainer {
+    border: 1px solid var(--color-gray-light);
+    padding: 2vh;
+    margin-top: 3vh;
+    border-radius: 2vh;
+  }
+
+  .ongInfoContainer h3 {
+    margin: 0
+  }
+  
+  .ongHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1vh;
+  }
+  
+
+  .socialIcons {
+    display: flex;
+    gap: 1vw;
+    margin-top: 1vh;
+  }
+
+  .title {
+    font-weight: 600;
+  }
+  
+  .ongAndIcon img {
+    margin-left: 0.5vw;
+    height: 2vh;
+  }
+
+  
+  .starsContainer {
+    width: 6vw;
+    display: flex;
+    justify-content: space-between;
+   
+   
+  }
+
+  .starsContainer svg {
+    fill: var(--color-primary-medium);
+    font-size:2vh;
+  }
