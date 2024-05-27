@@ -48,12 +48,10 @@ const Header2 = ({ sectionType }) => {
     case "FAQ":
       subtextContent = (
         <p>
-          <span>Perguntas frequentes</span>
+          <span>FAQ</span>
         </p>
       );
-      headerContent = (
-        <h1>Tudo o que você precisa saber para adotar seu animalzinho</h1>
-      );
+      headerContent = <h1>Perguntas frequentes sobre a adoção</h1>;
       break;
     case "Donations":
       subtextContent = (
@@ -71,12 +69,20 @@ const Header2 = ({ sectionType }) => {
   return (
     <div className={styles.container}>
       <div className={styles.messageBanner}>
-        <img src={pawsLeft} alt="Gato traço em linha" />
+        <img
+          className={styles.pawsImage}
+          src={pawsLeft}
+          alt="Patas de cachorro"
+        />
         <div className={styles.messageBannerText}>
           {subtextContent}
           {headerContent}
         </div>
-        <img src={pawsRight} alt="Cachorro traço em linha" />
+        <img
+          className={styles.pawsImage}
+          src={pawsRight}
+          alt="Patas de cachorro"
+        />
       </div>
       <div className={styles.waveContainer}>
         <div className={styles.wave}></div>

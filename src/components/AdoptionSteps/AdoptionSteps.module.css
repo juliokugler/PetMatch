@@ -72,3 +72,15 @@
     margin-left: 0.2vw;
     cursor: pointer;
   }
+
+  @media screen and (max-width: 768px) {
+    .cardContainer {
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .card {
+      width: 60vw; /* Adjust as needed */
+      margin-bottom: 4vh;
+    }
+  }

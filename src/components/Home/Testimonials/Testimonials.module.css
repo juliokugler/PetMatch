@@ -10,7 +10,7 @@
 
 .waveBorder {
     width: 100vw;
-    height: 8vh;
+    height: 3vh;
 }
 
 .text{
@@ -88,4 +88,83 @@ font-weight: 500}
   .starsContainer svg {
     fill: var(--color-primary-medium);
     font-size:2vh;
+  }
+
+  @media screen and (max-width: 768px) {
+
+    .container {
+        height: 65vh;
+        background-image: url("../../../Assets/Images/petOwner.png");
+        display: flex;
+        background-repeat: no-repeat;
+        flex-direction: column;
+        justify-content: space-between;
+        background-size: auto 65vh;
+        background-position: center
+        ;
+    }
+    .imageContainer img {
+        height: 0;
+    }
+    
+.innerContainer {
+    width: 58vw;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+    .text{
+        width: 80vw;
+        margin-bottom: 4vh;
+        font-size: 2.2vh;
+    font-weight: 500}
+    
+    .textContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 45vh;
+        padding: 2vh;
+        background-color: #ffffff86;
+        color: var(--color-black);
+        border-radius: 2vh;
+    }
+    
+    .waveBorder {
+        width: 100vw;
+        height: 1vh;
+    }
+    .starsContainer {
+        width: 22vw;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 3vh;
+       
+      }
+    
+      .starsContainer svg {
+        fill: var(--color-primary-medium);
+        font-size:2vh;
+      }
+      .nameAndIcons{
+        display: flex;
+        width: 80vw;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    
+  .pageBox{
+    display: flex;
+    padding: 1.5vh;
+    background-color: var(--color-background);
+    justify-content: center;
+    align-items: center;
+    margin: 0 3vw;
+    cursor: pointer;
+    border-radius: 100px;
+  }
   }

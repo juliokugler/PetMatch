@@ -2,8 +2,8 @@ import React from "react";
 import styles from "./BannerAjuda.module.css";
 import imageCollage from "../../Assets/Images/Contents.png";
 import { useNavigate } from "react-router-dom";
-import waveTop from "./waveTop.png";
-import waveBottom from "./waveBottom.png";
+import waveTop from "../../Assets/Images/waveTop.png";
+import waveBottom from "../../Assets/Images/waveBottom.png";
 import { FaHeart } from "react-icons/fa";
 
 const BannerAjuda = () => {

@@ -132,3 +132,43 @@
   .icon:hover {
     fill: (--color-black);
   }
+
+  @media screen and (max-width: 768px) {
+
+    .newsletterForm {
+    margin-top: 2vh;
+    }
+    .newsletterRow {
+      display: flex;
+      flex-direction: column;
+          margin-bottom: 3vh;
+      width: 80vw;
+      
+    }
+
+.logoSection{
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+ align-items: center;
+}
+
+    .infoRow {
+      display: flex;
+      flex-direction: column;
+      width: 80vw;
+     
+    }
+
+    .linksSection {
+      width: 100vw;
+      display: flex;
+      flex-direction: column;
+      margin-left: 0;
+      margin-top: 2vh;
+    }
+    .logo {
+      width: 0;
+      margin-bottom: 0;
+    }
+  }

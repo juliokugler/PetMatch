@@ -1,7 +1,7 @@
 
 
 .container {
-    height: 76vh;
+    height: 74vh;
     background-color: var(--color-secondary-medium);
     display: flex;
     flex-direction: column;
@@ -15,18 +15,18 @@
 
 .waveBorder {
     width: 100vw;
-    height: 8vh;
+    height: 3vh;
 }
 
 .imageContainer {
-  height: 60vh;
+  height: 62vh;
   margin-right: -5vw;
  
 }
 
 .imageContainer img{
   height: 60vh;
-  width: 34vw;
+  width: auto;
   padding-top: 2vh;
 }
 .innerContainer {
@@ -44,6 +44,7 @@ align-items: center;
 
 .button {
     padding: 1vh 2vh;
+    width: 16vw;
     border: none;
     border-radius: 2vh;
     background-color:  var(--color-primary-medium);
@@ -101,3 +102,101 @@ align-items: center;
     left: 0;
     animation: moveWave 70s linear infinite;
   }
+
+  @media (max-width: 1134px) {
+
+    
+.container {
+  height: 80vh;
+  background-color: var(--color-secondary-medium);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.textContainer {
+  width: 50vw;
+  text-align: center;
+  padding-bottom: 6vh;
+  font-size: 1.8vh;
+}
+
+    .innerContainer {
+      flex-direction: column; /* Corrected from display: column; */
+      width: 100vw;
+    }
+
+    .innerContainer h1 {
+      font-size: 3vh;
+      font-weight: 500;
+  }
+  .button {
+    padding: 1vh 2vh;
+    width: 40vw;
+    border: none;
+    border-radius: 2vh;
+    background-color:  var(--color-primary-medium);
+    cursor: pointer;
+    margin-top: 3vh;
+    font-size: 1.8vh;
+  }
+
+
+    .imageContainer {
+      height: 30vh;
+    
+    }
+
+    .imageContainer img{
+      height: 30vh;
+      width: auto;
+      padding-top: 0;
+    }
+
+  }
+
+  @media (max-width: 768px) {
+    .textContainer {
+      width: 65vw;
+      text-align: center;
+      padding-bottom: 6vh;
+      font-size: 1.8vh;
+    }
+    
+    .button {
+    
+    padding: 1vh 2vh;
+    width: 65vw;
+    border: none;
+    border-radius: 2vh;
+    background-color:  var(--color-primary-medium);
+    cursor: pointer;
+    margin-top: 3vh;
+    font-size: 1.8vh;
+  }
+
+  }
+
+
+  @media (max-width: 480px) {  
+    
+    .textContainer {
+      width: 80vw;
+      text-align: center;
+      padding-bottom: 6vh;
+      font-size: 1.8vh;
+    }
+    
+    .button {
+    
+    padding: 1vh 2vh;
+    width: 80vw;
+    border: none;
+    border-radius: 2vh;
+    background-color:  var(--color-primary-medium);
+    cursor: pointer;
+    margin-top: 3vh;
+    font-size: 1.8vh;
+  }
+}

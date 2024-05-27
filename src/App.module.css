@@ -13,6 +13,7 @@
     flex-direction: column;
     width: 100vw;
     overflow: hidden;
+    padding-top: 0;
 }
 
 .userFooter{
@@ -27,4 +28,8 @@ svg {
 body{
    width: 100vw;
    overflow-x: hidden;
+}
+
+@media screen and (max-width: 768px) {
+    .container{ padding-top: 8vh; }
 }

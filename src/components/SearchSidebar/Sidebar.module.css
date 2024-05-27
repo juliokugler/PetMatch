@@ -65,6 +65,11 @@
     width: 12vw;
   }
   
+  .section{
+    display: flex;
+    flex-direction: column;
+  }
+
   .searchButton {
     height: 5vh;
     width: 8vw;
@@ -93,4 +98,108 @@
   .useCurrentLocation {
     display: flex;
     align-items: center;
+  }
+
+  @media screen and (max-width: 768px) {
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      height: 80vh;
+      border-radius: 20px;
+      margin-bottom: 6vh;
+      width: 80vw;
+      margin-right: 2vw;
+      color: #343330;
+    }
+    
+    .buttonRow {
+      width: 80vw;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      height: 8vh;
+      align-items: center;
+      border-bottom: 1px solid #E8E8E8;
+    }
+    
+    .container form {
+      display: flex;
+      flex-direction: column;
+      width: 80vw;
+      align-items: center;
+      margin: 0 auto;
+    }
+    
+    .searchLabel {
+      display: flex;
+      flex-direction: column;
+      text-align: left;
+      width: 80vw;
+      margin-bottom: 0;
+      position: relative;
+    }
+    
+    .searchLabel input {
+      border: none;
+      height: 5vh;
+      border-radius: 6px;
+      width: 70vw;
+      border: 1px solid #E8E8E8;
+      padding-left: 10vw;
+    }
+  
+    .searchIcon{
+      position: absolute;
+      height: 2.2vh;
+      bottom: 44.5%;
+      left: 3.5%;
+    }
+    
+    .searchLabel input::placeholder {
+    
+      font-size: 1.6vh;
+    }
+    
+    .searchLabel select {
+      border: none;
+      height: 3vh;
+      border-radius: 6px;
+      width: 12vw;
+    }
+    
+    .section{
+      display: flex;
+      flex-direction: row;
+    }
+  
+    .searchButton {
+      height: 5vh;
+      width: 40vw;
+      border: none;
+      border-radius: 100px;
+      display: flex;
+      align-items: center;
+      background-color: #FFCA96;
+      margin-top: 3.4vh;
+      cursor: pointer;
+      justify-content: center;
+    }
+    
+    .searchButton p {
+      font-size: 1.8vh;
+      font-weight: 500;
+    }
+    
+    .mapPin {
+      height: 2vh;
+      width: auto;
+      margin-right: 0.2vw;
+      padding-bottom: 0.5vh;
+    }
+    
+    .useCurrentLocation {
+      display: flex;
+      align-items: center;
+    }
   }

@@ -1,14 +1,16 @@
 .navbar {
-    
     width: 100vw;
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
     align-items: center;
     border-bottom: 1px solid #F4F4F4;
-    z-index: 1;
+    background-color: var(--color-background);
+    z-index: 10;
     height: 8vh;
-    
+   
+    top: 0;
+    left: 0;
 }
 
 .container {
@@ -17,15 +19,20 @@
     margin: 0 auto;
     align-items: center;
     justify-content: space-between;
+    position: relative; /* Ensure that ul is positioned relative to the container */
 }
 
 .navbar ul {
     display: flex;
     align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 .navbar img {
-    height: 2.8vh}
+    height: 2.8vh;
+}
 
 .navbar li {
     list-style: none;
@@ -53,4 +60,83 @@
     background-color: #FFCA96;
     padding: 8px 12px;
     border-radius: 100px;
+}
+
+/* Hamburger Styles */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    border: none;
+    background: none;
+    padding: 0;
+    margin: 0;
+}
+
+.hamburger span {
+    height: 3px;
+    width: 25px;
+    background-color: #343330;
+    margin: 4px 0;
+    transition: 0.3s;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+
+    .navbar {
+        width: 100vw;
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+        align-items: center;
+        border-bottom: 1px solid #F4F4F4;
+        background-color: var(--color-background);
+        z-index: 10;
+        height: 8vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+    
+
+    .navbar ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 8vh; /* Position menu directly below the navbar */
+        left: 0;
+        border-radius: 2vh;
+        background-color: white;
+        text-align: center;
+        border: 1px solid var(--color-gray-light);
+        z-index: 9; /* Ensure it is above other content but below the navbar */
+    }
+
+
+    .navbar li img {
+        width: 0;
+        height: 0;
+    }
+
+    .navbar ul.open {
+        display: flex;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .container {
+        justify-content: space-between;
+    }
+
+    .navbar li {
+        margin: 2vh 0;
+    }
+
+    .navbar img {
+        height: 3vh;
+    }
 }

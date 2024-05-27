@@ -1,4 +1,4 @@
-import styles from "./App.css";
+import styles from "./App.module.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { useState, useEffect } from "react";
 import Home from "./pages/Home/Home";
@@ -45,8 +45,9 @@ function App() {
     <div className="App">
       <AuthProvider value={{ user }}>
         <BrowserRouter>
-          <div className="container">
-            <Navbar />
+          {" "}
+          <Navbar />
+          <div className={styles.container}>
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/login" element={<Login />} />

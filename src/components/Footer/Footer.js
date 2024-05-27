@@ -35,15 +35,17 @@ const Footer = () => {
           </div>
           <div className={styles.linksSection}>
             <div className={styles.linksGroup}>
-              <h3>Ajude Animais</h3>
-              <a href="busca-pet">Adote</a>
-              <a href="anuncie">Anuncie</a>
-              <a href="contribuir">Contribua</a>
-            </div>
-            <div className={styles.linksGroup}>
-              <h3>PETMACH</h3>
-              <a href="sobre">Sobre nós</a>
-              <a href="#contato">Contato</a>
+              <div className={styles.row}>
+                <h3>Ajude Animais</h3>
+                <a href="busca-pet">Adote</a>
+                <a href="anuncie">Anuncie</a>
+                <a href="contribuir">Contribua</a>
+              </div>
+              <div className={styles.linksGroup}>
+                <h3>PETMACH</h3>
+                <a href="sobre">Sobre nós</a>
+                <a href="#contato">Contato</a>
+              </div>
             </div>
             <div className={styles.linksGroup}>
               <h3>Recursos</h3>

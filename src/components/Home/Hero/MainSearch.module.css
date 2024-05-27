@@ -1,0 +1,340 @@
+
+.container {
+  position: relative;
+  height: 80vh;
+  background-repeat: no-repeat;
+  width: 100vw;
+  background-size: 100vw 80vh;
+  background-image: url("../../../Assets//Images/hero.png");
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.container h1 {
+  margin-bottom: 4vh;
+  font-size: 4vh;
+  font-weight: 600;
+  margin-top: 0.5vh;
+}
+
+.searchBox {
+  position: absolute;
+  bottom: 42%;
+  left: 58%;
+  transform: translate(-137%, 35%);
+  color: var(--color-black);
+  text-align: left;
+  z-index: 1;
+  font-size: 0.9vw;
+  background-color: var(--color-background);
+  height: 51vh;
+  width: 31vw;
+  padding: 2vw;
+  border-radius: 2vh;
+}
+
+.image {
+  display: flex;
+  margin: 0 auto;
+  width: 100%;
+  height: auto;
+}
+
+.CTA {
+  background-color: var(--color-primary-medium);
+  border: none;
+  display: flex;
+  align-items: center;
+  margin-top: 3vh;
+  padding: 1vw 0;
+  border-radius: 100px;
+  transition: 0.3s ease;
+  cursor: pointer;
+  width: 31vw;
+  justify-content: center;
+}
+
+.subtext {
+  display: flex;
+  align-items: center;
+  margin-bottom: 4vh;
+}
+
+.pinIcon {
+  height: 1.8vh;
+  margin-right: 0.3vw;
+  padding-bottom: 0.3vh;
+}
+
+.CTA p {
+  font-size: 2vh;
+  margin: 0;
+  font-weight: 500;
+  color: var(--color-black);
+}
+
+.searchInput {
+  width: 31vw;
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+  height: 6vh;
+  border-radius: 1vh;
+  border: 1px solid var(--color-gray-medium);
+  align-items: center;
+}
+
+.searchInput::placeholder {
+  padding: 2vw;
+  font-size: 1.8vh;
+}
+
+.cardRow {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 5vh;
+}
+
+.card {
+  height: 6vh;
+  width: 9vw;
+  border: 1px solid var(--color-gray-medium);
+  border-radius: 1vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.card img {
+  height: 3vh;
+  margin-right: 0.4vw;
+  margin-left: -0.4vw;
+}
+
+.card p {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+}
+
+.card.active {
+  color: var(--color-primary-dark);
+  border: 1px solid var(--color-primary-dark);
+  background-color: var(--color-background);
+}
+
+  /* Define keyframes for the wave animation */
+  @keyframes moveWave {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+  
+  /* Apply the animation to the wave container */
+  .waveContainer {
+    width: 200%;
+    height: 6vh;
+    overflow: hidden; /* Hide any overflow */
+    position: absolute; /* Absolute positioning within the container */
+    bottom: 0; /* Position at the bottom of the container */
+    left: 0; /* Ensure it starts from the left */
+  }
+  
+  /* Apply the animation to each wave */
+  .wave {
+    width: 200%; /* Ensures two waves fit in the container */
+    height: 100%;
+    background-image: url("../../../Assets/Images/waveBottom.png");
+    background-size: contain; /* Ensure the image covers the element */
+    background-repeat: repeat-x;
+    position: absolute; /* Position absolute for animation */
+    top: 0;
+    left: 0;
+    animation: moveWave 160s linear infinite;
+  } 
+
+.title {
+  width: 21.5vw;
+  position: relative;
+  display: inline-block;
+  background-image: url("../../../Assets/Images/Underline.png");
+  background-repeat: no-repeat;
+  background-size: 17.5vw 2.7vh;
+  background-position: 100% 24%;
+}
+
+@media (max-width: 1134px) {
+
+  .container {
+    position: relative;
+    height: 80vh;
+    background-repeat: no-repeat;
+    width: 100vw;
+    background-size: 100vw 80vh;
+    background-image: url("../../../Assets//Images/hero.png");
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .searchBox {
+    position: absolute;
+    bottom: 42%;
+    left: 105%;
+    transform: translate(-137%, 35%);
+    color: var(--color-black);
+    text-align: left;
+    z-index: 1;
+    font-size: 0.9vw;
+    background-color: var(--color-background);
+    height: 51vh;
+    width: 60vw;
+    padding: 2vw;
+    border-radius: 2vh;
+  }
+
+  .waveContainer {
+    width: 100vw;
+    height: 6vh;
+    overflow: hidden;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    bottom: 0;
+    left: 0;
+  }
+  
+
+  .wave {
+    width: 500vw;
+    height: 6.2vh;
+    background-image: url("../../../Assets/Images/waveBottom.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: moveWave 90s linear infinite;
+  }
+  
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .searchBox {
+    position: static;
+    transform: none;
+    width: 60%;
+    height: auto;
+    margin: 2vh auto;
+  }
+
+  .waveContainer {
+    width: 0;
+    height: 6vh;
+    overflow: hidden;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    bottom: 0;
+    left: 0;
+  }
+  
+
+  .wave {
+    width: 700vw;
+    height: 6.2vh;
+    background-image: url("../../../Assets/Images/waveBottom.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: moveWave 90s linear infinite;
+  }
+  
+}
+
+  .searchInput {
+    width: 100%;
+  }
+
+  .CTA {
+    width: 100%;
+  }
+
+  .card {
+    width: 30%;
+  }
+
+  .title {
+    width: 90%;
+    background-size: 80% 2.7vh;
+  }
+
+@media (max-width: 480px) {
+  .searchBox {
+    width: 100%;
+    padding: 5vw;
+  }
+
+  .searchInput {
+    width: 100%;
+    font-size: 3vw;
+  }
+
+  .CTA {
+    width: 100%;
+    padding: 2vw 0;
+  }
+
+  .title {
+    width: 100%;
+    background-size: 90% 2.7vh;
+  }
+
+  .card {
+    width: 45%;
+    height: 10vh;
+  }
+
+  .card img {
+    height: 5vh;
+  }
+
+  .CTA p {
+    font-size: 4vw;
+  }
+
+  .subtext {
+    font-size: 2.5vw;
+  }
+
+
+.waveContainer {
+  width: 0;
+  height: 0;
+  overflow: hidden;
+ 
+  display: flex;
+  flex-direction: column;
+  bottom: -5%;
+  left: 0;
+}
+
+
+.wave {
+ 
+  height: 0;
+  background-image: url("../../../Assets/Images/waveBottom.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  left: 0;
+  animation: moveWave 90s linear infinite;
+}}

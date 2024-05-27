@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./Testimonials.module.css";
-import waveTop from "./waveTop.png";
-import waveBottom from "./waveBottom.png";
+import waveTop from "../../../Assets/Images/waveTop.png";
+import waveBottom from "../../../Assets/Images/waveBottom.png";
 import petOwner from "../../../Assets/Images/petOwner.png";
 import { FaArrowRight, FaArrowLeft, FaStar } from "react-icons/fa6";
 const Testimonials = () => {

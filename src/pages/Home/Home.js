@@ -1,5 +1,4 @@
 import React, { useRef, useEffect } from "react";
-import Hero from "../../components/Home/Hero/Hero";
 import AdoptionSteps from "../../components/AdoptionSteps/AdoptionSteps";
 import PetMatchInfo from "../../components/PetMatchInfo/PetMatchInfo";
 import styles from "./Home.module.css";
@@ -7,6 +6,7 @@ import AnimaisProximos from "../../components/Home/AnimaisProximos/AnimaisProxim
 import Testimonials from "../../components/Home/Testimonials/Testimonials";
 import RecentBlogPosts from "../../components/Home/RecentBlogPosts/RecentBlogPosts";
 import BannerAjuda from "../../components/BannerAjuda/BannerAjuda";
+import MainSearch from "../../components/Home/Hero/MainSearch";
 
 const Home = () => {
   const adoptionStepsRef = useRef(null);
@@ -38,7 +38,7 @@ const Home = () => {
   return (
     <div className={styles.container}>
       <div className={styles.heroContainer}>
-        <Hero />
+        <MainSearch />
       </div>
       <div className={styles.servicosContainer} ref={adoptionStepsRef}>
         <AdoptionSteps />

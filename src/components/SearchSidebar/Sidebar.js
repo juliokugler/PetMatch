@@ -56,16 +56,18 @@ const Sidebar = () => {
             <p>Utilizar minha localização atual</p>
           </div>
         </label>
-
-        <FilterSection
-          title="Espécie"
-          name="species"
-          options={speciesOptions}
-        />
-        <FilterSection title="Sexo" name="gender" options={genderOptions} />
-        <FilterSection title="Porte" name="size" options={sizeOptions} />
-        <FilterSection title="Idade" name="age" options={ageOptions} />
-
+        <section className={styles.section}>
+          <FilterSection
+            title="Espécie"
+            name="species"
+            options={speciesOptions}
+          />
+          <FilterSection title="Sexo" name="gender" options={genderOptions} />
+        </section>
+        <section className={styles.section}>
+          <FilterSection title="Porte" name="size" options={sizeOptions} />
+          <FilterSection title="Idade" name="age" options={ageOptions} />
+        </section>
         <button className={styles.searchButton}>
           <p>Aplicar Filtros</p>
         </button>

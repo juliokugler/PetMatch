@@ -26,7 +26,7 @@ const Header = ({ sectionType }) => {
       subtextContent = (
         <p>
           {" "}
-          <span>Adote em quatro etapas</span>
+          <span>Adote em quatro patas</span>
         </p>
       );
       headerContent = (

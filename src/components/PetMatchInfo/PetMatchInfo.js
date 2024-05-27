@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import styles from "./PetMatchInfo.module.css";
-import waveTop from "./waveTop.png";
-import waveBottom from "./waveBottom.png";
+import waveTop from "../../Assets/Images/waveTop.png";
+import waveBottom from "../../Assets/Images/waveBottom.png";
 
 const PetMatchInfo = () => {
   const cardRefs = useRef([]);
