@@ -1,4 +1,4 @@
-# View the project live
+# View the Project Live
 
 [Click here](https://petmatch-6165d.web.app)
 
