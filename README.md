@@ -1,6 +1,6 @@
 # View the project live
 
-Access [Click here](https://petmatch-6165d.web.app)
+[Click here](https://petmatch-6165d.web.app)
 
 # Getting Started with Create React App
 
