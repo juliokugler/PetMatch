@@ -95,7 +95,9 @@
     padding: 1vh 2vh;
     border: none;
     border-radius: 2vh;
-    background-color: var(--color-primary-medium);
+    background-color: var(--color-primary-dark);
+    color: white;
+    font-weight: 400;
     cursor: pointer;
     display: flex;
     align-items: center;
@@ -115,7 +117,7 @@
     margin:0;
     margin-left: 0.5vw;
     font-size: 1.5vh;
-    fill: var(--color-gray-dark);
+    fill: white;
     padding:0
   }
 

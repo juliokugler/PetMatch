@@ -34,7 +34,7 @@ const DonationForm = () => {
 
   return (
     <div className={styles.container}>
-      <div className={styles.imageContainer}></div>
+      
       <div className={styles.donationForm}>
         <h1>Faça uma Doação</h1>
 
@@ -90,10 +90,7 @@ const DonationForm = () => {
           </button>
         </form>
       </div>{" "}
-      <div className={styles.waveContainer}>
-        <div className={styles.wave}></div>
-        <div className={styles.wave}></div>
-      </div>
+      <div className={styles.imageContainer}></div>
     </div>
   );
 };

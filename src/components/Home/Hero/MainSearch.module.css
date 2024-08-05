@@ -42,8 +42,8 @@
 }
 
 .CTA {
-  background-color: var(--color-primary-medium);
-  border: none;
+  background-color: var(--color-primary-dark);
+   border: none;
   display: flex;
   align-items: center;
   margin-top: 3vh;
@@ -70,8 +70,8 @@
 .CTA p {
   font-size: 2vh;
   margin: 0;
-  font-weight: 500;
-  color: var(--color-black);
+  font-weight: 400;
+  color: white;
 }
 
 .searchInput {
@@ -166,7 +166,7 @@
   background-image: url("../../../Assets/Images/Underline.png");
   background-repeat: no-repeat;
   background-size: 17.5vw 2.7vh;
-  background-position: 100% 24%;
+  background-position: 100% 29%;
 }
 
 @media (max-width: 1134px) {

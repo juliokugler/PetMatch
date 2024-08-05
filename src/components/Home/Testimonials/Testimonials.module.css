@@ -2,15 +2,13 @@
 
 .container {
     height: 65vh;
-    background-color: #FFF1DF;
+    width: 80vw;
+    margin: 0 auto;
+    border-radius: 4vh;
+    background-color: var(--color-primary-light);
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-}
-
-.waveBorder {
-    width: 100vw;
-    height: 3vh;
+    justify-content: center;
 }
 
 .text{
@@ -29,7 +27,7 @@ font-weight: 500}
 
 
 .innerContainer {
-    width: 58vw;
+    width: 60vw;
     display: flex;
     margin: 0 auto;
     justify-content: space-between;
@@ -37,7 +35,7 @@ font-weight: 500}
 }
 
 .imageContainer img {
-    height: 50vh;
+    width: 26vw;
 }
 
 .textContainer span {
@@ -86,7 +84,7 @@ font-weight: 500}
   }
 
   .starsContainer svg {
-    fill: var(--color-primary-medium);
+    fill: black;
     font-size:2vh;
   }
 

@@ -26,7 +26,7 @@
     flex-wrap: wrap;
     margin: 0 auto;
     justify-content: space-between;
-    margin-top: 7vh;
+    margin-top: 8vh;
     margin-bottom: 6vh;
   }
   
@@ -35,6 +35,7 @@
     min-height: 24vh;
     text-align: center;
     border-radius: 20px;
+    border: 1px solid #C9DAE3;
     background-color: var(--color-background);
     padding: 2vh;
     margin-bottom: 4vh;
@@ -50,7 +51,7 @@
   }
   
   .card img {
-    height: 6vh;
+    height: 4vh;
   }
   
   .card p {

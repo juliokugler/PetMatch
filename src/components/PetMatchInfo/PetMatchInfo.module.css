@@ -2,10 +2,11 @@
 
 .container {
     height: 62vh;
-    background-color: #FFCA96;
+    background-color: var(--color-primary-dark);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    color: white;
 }
 
 .card {

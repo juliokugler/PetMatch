@@ -33,28 +33,28 @@ const Navbar = () => {
           <li>
             <NavLink to="/busca-pet">
               <p>
-                Adotar <img src={arrowDown} alt="Arrow down" />
+                Adotar 
               </p>
             </NavLink>
           </li>
           <li>
             <NavLink to="/anuncie">
               <p>
-                Anunciar <img src={arrowDown} alt="Arrow down" />
+                Anunciar 
               </p>
             </NavLink>
           </li>
           <li>
             <NavLink to="/sobre">
               <p>
-                Sobre <img src={arrowDown} alt="Arrow down" />
+                Sobre 
               </p>
             </NavLink>
           </li>
           <li>
             <NavLink to="/FAQ">
               <p>
-                Ajuda <img src={arrowDown} alt="Arrow down" />
+                FAQ 
               </p>
             </NavLink>
           </li>

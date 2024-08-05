@@ -7,7 +7,6 @@ import { FaArrowRight, FaArrowLeft, FaStar } from "react-icons/fa6";
 const Testimonials = () => {
   return (
     <div className={styles.container}>
-      <img className={styles.waveBorder} src={waveTop}></img>
       <div className={styles.innerContainer}>
         <div className={styles.textContainer}>
           <div className={styles.starsContainer}>
@@ -43,7 +42,6 @@ const Testimonials = () => {
           <img src={petOwner}></img>
         </div>
       </div>
-      <img className={styles.waveBorder} src={waveBottom}></img>
     </div>
   );
 };

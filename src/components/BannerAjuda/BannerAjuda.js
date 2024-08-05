@@ -1,9 +1,7 @@
 import React from "react";
 import styles from "./BannerAjuda.module.css";
-import imageCollage from "../../Assets/Images/Contents.png";
+import catPeaking from "../../Assets/Images/Cat.png";
 import { useNavigate } from "react-router-dom";
-import waveTop from "../../Assets/Images/waveTop.png";
-import waveBottom from "../../Assets/Images/waveBottom.png";
 import { FaHeart } from "react-icons/fa";
 
 const BannerAjuda = () => {
@@ -11,7 +9,6 @@ const BannerAjuda = () => {
 
   return (
     <div className={styles.container}>
-      <img className={styles.waveBorder} src={waveTop}></img>
       <div className={styles.innerContainer}>
         <div className={styles.textContainer}>
           <h1>
@@ -29,10 +26,9 @@ const BannerAjuda = () => {
           </button>
         </div>
         <div className={styles.imageContainer}>
-          <img src={imageCollage} alt="montagem de fotos pet"></img>
+          <img src={catPeaking} alt="gato"></img>
         </div>
       </div>
-      <img className={styles.waveBorder} src={waveBottom}></img>
     </div>
   );
 };

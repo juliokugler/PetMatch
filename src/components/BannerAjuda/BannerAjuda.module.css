@@ -1,7 +1,7 @@
 
 
 .container {
-    height: 74vh;
+    height: 50vh;
     background-color: var(--color-secondary-medium);
     display: flex;
     flex-direction: column;
@@ -13,21 +13,15 @@
   color:  var(--color-primary-dark);
 }
 
-.waveBorder {
-    width: 100vw;
-    height: 3vh;
-}
 
 .imageContainer {
   height: 62vh;
-  margin-right: -5vw;
  
 }
 
 .imageContainer img{
-  height: 60vh;
+  height: 46vh;
   width: auto;
-  padding-top: 2vh;
 }
 .innerContainer {
     display: flex;
@@ -47,7 +41,8 @@ align-items: center;
     width: 16vw;
     border: none;
     border-radius: 2vh;
-    background-color:  var(--color-primary-medium);
+    background-color:  var(--color-primary-dark);
+    color: white;
     cursor: pointer;
     margin-top: 3vh;
     font-size: 1.8vh;
@@ -55,8 +50,12 @@ align-items: center;
 
   .textContainer {
     width: 24vw;
-    padding-bottom: 6vh;
     font-size: 1.8vh;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 18vh;
   }
 
   .button p {
@@ -68,6 +67,7 @@ align-items: center;
   .button svg {
     margin-left: 0.5vw;
     padding: 0;
+    fill: white;
   }
 
    /* Define keyframes for the wave animation */
@@ -106,14 +106,7 @@ align-items: center;
   @media (max-width: 1134px) {
 
     
-.container {
-  height: 80vh;
-  background-color: var(--color-secondary-medium);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-}
+
 
 .textContainer {
   width: 50vw;

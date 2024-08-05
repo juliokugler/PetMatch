@@ -7,7 +7,7 @@
 }
 
 .background {
-  background-image: url("../../Assets/Images/bg.png");
+  background-image: url("../../Assets/Images/bg2.png");
   background-size: cover; /* Ensures the background image covers the entire container */
   background-position: center; /* Centers the background image within the container */
   border-radius: 10px; /* Set the border radius to round the corners */

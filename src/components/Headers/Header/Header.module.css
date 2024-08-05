@@ -27,8 +27,8 @@ color: var(--color-primary-dark);
 }
 
 .dogImage, .catImage {
-    height: 16vh;
     width: 16vh;
+    height: auto;
     margin-top: 1.5vh;
 }
 
